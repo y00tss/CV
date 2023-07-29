@@ -1,8 +1,9 @@
 # CV
 Hello! It`s my first meet Django.
 
-I learned:
-  Basic Django
+This project based on:
+  
+Basic Django
   HTML & CSS
   Work with templates
-  First deploy
+  First deploy *not copmleted*
