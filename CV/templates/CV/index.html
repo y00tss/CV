@@ -9,211 +9,196 @@
 </head>
 <body class="is-preload">
 
-<!-- Header -->
-<header id="header">
-    <div class="inner">
-        <a href="#" class="image avatar"><img src="{% static 'CV/images/logo/avatar.jpg' %}" alt=""/></a>
-        <h1><strong>I am Mykhailo Shepelenko</strong><br/>
-            Trainee / Junior <strong>Python Developer</strong><br/>
-            <strong>My email - <strong><a href="mailto:shepel9119@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></h1>
-    </div>
-</header>
-
-<!-- Main -->
-<div id="main">
-
-    <!-- One -->
-    <section id="one">
-        <header class="major">
-            <h2>About me</h2>
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="image avatar"><img src="{% static 'CV/images/logo/avatar.jpg' %}" alt=""/></a>
+                <h1><strong>I am {{ user.first_name }} {{ user.last_name }}</strong><br/>
+                    Trainee / Junior <strong>Python Developer</strong><br/>
+                    <strong>My email - <strong><a href="mailto:{{ user.email }}" class="icon solid fa-envelope"><span class="label">Email</span></a></h1>
+            </div>
         </header>
-        <p>
-            I`m Mykhailo, 24 yo. <br>
 
-        </p>
-        <ul class="actions">
-            <li><a class="button" onclick="showFullInfo()">Learn More</a></li>
-        </ul>
-        <p id="full-info" style="display:none;">
-            Python developer with 1 year of python learning. Well-acquainted with database engineering, data warehouses, and data processing. Knowledgeable in Python frameworks related to data such as SciPy, NumPy, Matplotlib. Cloudera certified Data analyst, PCPP-1 certification and Spark/Hadoop developer certification.
-        </p>
-    </section>
-    <!-- Two -->
-    <section id="three">
-        <h2>Education</h2>
-        <div class="row">
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="http://www.onma.edu.ua/?lang=en" target="_blank" class="image fit thumb"><img src="{% static 'CV/images/education/NUOMA.png' %}" alt="Link to University"/></a>
-                <h3>National University "Odesa Maritime Academy"</h3>
-                <h5>Faculty of engineering</h5>
-                <p>2015-2019, Bachelor</p>
-            </article>
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="https://beetroot.academy" target="_blank" class="image fit thumb"><img src="{% static 'CV/images/education/beetroot.png' %}" alt="Link to Academy"/></a>
-                <h3>BeetRoot Academy</h3>
-                <h5>Python Developer</h5>
-                <p>March 2023-August 2023, online school</p>
-            </article>
+        <!-- Main -->
+        <div id="main">
+
+            <!-- One -->
+            <section id="one">
+                <header class="major">
+                    <h2>About me</h2>
+                </header>
+                <p>
+                    Hi, I`m Mykhailo<br>
+                    I`m looking for a Trainee / Junior Python Developer position. <br>
+                    I have a strong desire to learn and develop in the field of Python development. I like to spend a time with computers and ready for hard work, coz it`s only one way to get success.<br>
+                    <br>
+
+                </p>
+                <ul class="actions">
+                    <li><a class="button" onclick="showFullInfo()">Learn More</a></li>
+                </ul>
+                <p id="full-info" style="display:none;">
+                     I graduated the Maritime Academy and already got the managerial position. It was good experience to meet and work in one team with other nationalities and cultures. <br>
+                     But this story is not for me and I decided to change my life.<br>
+                     Developing is really exciting type of work, I can be like Sherlock Holmes to create something or to find the problem and solve it using different ways.<br>
+                     So I hope that I can be useful for your company and we can work together.<br>
+                </p>
+            </section>
+            <!-- Two -->
+            <section id="three">
+                <h2>Education</h2>
+                <div class="row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="http://www.onma.edu.ua/?lang=en" target="_blank" class="image fit thumb"><img src="{% static 'CV/images/education/NUOMA.png' %}" alt="Link to University"/></a>
+                        <h3>National University "Odesa Maritime Academy"</h3>
+                        <h5>Faculty of engineering</h5>
+                        <p>2015-2019, Bachelor</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="https://beetroot.academy" target="_blank" class="image fit thumb"><img src="{% static 'CV/images/education/beetroot.png' %}" alt="Link to Academy"/></a>
+                        <h3>BeetRoot Academy</h3>
+                        <h5>Python Developer</h5>
+                        <p>April 2023-August 2023, Online Academy</p>
+                    </article>
+                </div>
+            </section>
+            <!-- Three -->
+            <section id="three">
+                <h2>Languages</h2>
+                <ul class="container">
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Ukrainian C2</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Russian C2</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">English B1-B2</a>
+
+                </ul>
+                <h2>Personal qualities</h2>
+                <ul class="container">
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Proactive</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Determined</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Organized</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Calm</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Conscientious</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Flexible</a>
+
+                </ul>
+                <ul class="container">
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Hard-working</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Independent</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Inquisitive</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Self-motivated</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Time-management</a>
+                </ul>
+                <h2>Technical skills</h2>
+                <ul class="container">
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Basic Python</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Advanced Python</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">OOP</a>
+                </ul>
+                <ul class="container">
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">SQL</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">SQLite</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">PostgreSQL</a>
+                </ul>
+                <ul class="container">
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Django</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Flask</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">HTML & CSS</a>
+
+                </ul>
+                <ul class="container">
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">GitHub</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">AWS</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Heroku</a>
+                </ul>
+                <ul class="container">
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">PyCharm</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Visual Code</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Atom</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Terminal</a>
+                    <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Linux</a>
+                </ul>
+            </section>
+            <!-- Four -->
+            <section id="two">
+                <h2>Certificates</h2>
+                <div class="row">
+                    {% for item in certificates %}
+                        <article class="col-6 col-12-xsmall work-item">
+                            <a href="{{ item.image }}" target="_blank" class="image fit thumb"><img src="{{ item.image }}" alt=""/></a>
+                            <h3>{{ item.name }}</h3>
+                            <ul class="actions"><li><a href="{{ item.link }}" target="_blank" class="button">Click to Verify</a></li></ul>
+                            <h5>{{ item.skills }}</h5>
+                            <p>{{ item.school_name }}</p>
+                        </article>
+                    {% endfor %}
+                </div>
+
+                <h2>Projects</h2>
+                <div class="row">
+                    {% for item in projects %}
+                        <article class="col-6 col-12-xsmall work-item">
+                            <a href="{{ item.image }}" target="_blank" class="image fit thumb"><img src="{{ item.image }}" alt=""/></a>
+                            <h3>{{ item.name }}</h3>
+                            <ul class="actions"><li><a href="{{ item.link }}" target="_blank" class="button">GitHub</a></li>
+                            </ul>
+                            <h5>{{ item.technologies }}</h5>
+                            <p>{{ item.description }}</p>
+                        </article>
+                    {% endfor %}
+
+                </div>
+            </section>
+            <!-- Five -->
+            <section id="two">
+                <h2>Get In Touch</h2>
+                <p>There are my personal information</p>
+                <div class="row">
+                    <div class="col-4 col-12-small">
+                        <ul class="labeled-icons">
+                            <li>
+                                <h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+                                Kartal, Istanbul<br/>
+                                Republic of Türkiye<br/>
+                            </li>
+                            <li>
+                                <h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+                                <span id="phone-number">+380 972144192</span>
+                            </li>
+                            <li>
+                                <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+                                <a href="mailto:{{ user.email }}">{{ user.email }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
-    <!-- Three -->
-    <section id="three">
-        <h2>Personal qualities</h2>
-        <ul class="container">
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Proactive</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Determined</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Organized</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Calm</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Conscientious</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Flexible</a>
 
-        </ul>
-        <ul class="container">
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Hard-working</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Independent</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Inquisitive</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Self-motivated</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Time-management</a>
-        </ul>
-        <h2>Technical skills</h2>
-        <ul class="container">
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Basic Python</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Advanced Python</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">OOP</a>
-        </ul>
-        <ul class="container">
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">SQL</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">SQLite</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">PostgreSQL</a>
-        </ul>
-        <ul class="container">
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Django</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Flask</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">HTML & CSS</a>
-
-        </ul>
-        <ul class="container">
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">GitHub</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">AWS</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Heroku</a>
-        </ul>
-        <ul class="container">
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">PyCharm</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Visual Code</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Atom</a>
-            <link rel="stylesheet" href="{% static 'CV/assets/css/button.css' %} "><a class="btn">Terminal</a>
-        </ul>
-    </section>
-    <!-- Four -->
-    <section id="two">
-        <h2>Certificates</h2>
-        <div class="row">
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="{% static 'CV/images/certificates/Basic_Python.png' %}" target="_blank" class="image fit thumb"><img src="{% static 'CV/images/certificates/Basic_Python.png' %}" alt=""/></a>
-                <h3>"Generation Python": course for beginners</h3>
-                <ul class="actions"><li><a href="https://stepik.org/cert/2041873" target="_blank" class="button">Click to Verify</a></li>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="mailto:{{ user.email }}" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                    <li><a href="https://github.com/y00tss" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                    <li><a href="https://t.me/MShepel" target="_blank" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/mykhailo-shepelenko-021592248/" target="_blank" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
                 </ul>
-                <h5>Basic Python, syntax, functions, loops etc.</h5>
-                <p>Stepic</p>
-            </article>
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="{% static 'CV/images/certificates/PostgreSQL.png' %}" target="_blank" class="image fit thumb"><img src="{% static 'CV/images/certificates/PostgreSQL.png' %}" alt=""/></a>
-                <h3>Database Design and Basic SQL in PostgreSQL</h3>
-                <ul class="actions"><li><a href="https://coursera.org/share/136ad5fec99b6cc72091aa34debc4013" target="_blank" class="button">Click to Verify</a></li>
-                </ul>
-                <h5>Basic SQL, PostgreSQL, database design</h5>
-                <p>University of Michigan</p>
-            </article>
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="{% static 'CV/images/certificates/beetroot.jpg' %}" target="_blank" class="image fit thumb"><img src="{% static 'CV/images/certificates/beetroot.jpg' %}" alt=""/></a>
-                <h3>Python Developer</h3>
-                <ul class="actions"><li><a href="https://lms.beetroot.academy/myCourses" target="_blank" class="button">Click to Verify</a></li>
-                </ul>
-                <h5>Advanced Python, SQLite, Django, </h5>
-                <p>BeetRoot Academy</p>
-            </article>
-        </div>
-
-        <h2>Projects</h2>
-        <div class="row">
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="{% static 'CV/images/projects/tkinder.png' %}" target="_blank" class="image fit thumb"><img src="{% static 'CV/images/projects/tkinder.png' %}" alt=""/></a>
-                <h3>Number Guesser</h3>
-                <ul class="actions"><li><a href="https://github.com/y00tss/Guesser" target="_blank" class="button">GitHub</a></li>
-                </ul>
-                <h5>Python, Tkinter</h5>
-                <p>First project based on Tkinter and first graphic applications</p>
-            </article>
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="{% static 'CV/images/projects/CV.jpg' %}" target="_blank" class="image fit thumb"><img src="{% static 'CV/images/projects/CV.jpg' %}" alt=""/></a>
-                <h3><strong>CV Site</strong></h3>
-                <ul class="actions"><li><a href="https://github.com/y00tss/CV" target="_blank" class="button">GitHub</a></li>
-                </ul>
-                <h5>Python, Django, HTML&CSS</h5>
-                <p>Personal CV, fist meet with templates and JS. First deploy of project</p>
-            </article>
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="{% static 'CV/images/projects/PythonPhoneBook.jpg' %}" target="_blank" class="image fit thumb"><img src="{% static 'CV/images/projects/PythonPhoneBook.jpg' %}" alt=""/></a>
-                <h3><strong>PhoneBook</strong></h3>
-                <ul class="actions"><li><a href="https://github.com/y00tss/BeetRoot-education/tree/main/lesson_10/homework/task_2" target="_blank" class="button">GitHub</a></li>
-                </ul>
-                <h5>Python, functions</h5>
-                <p>Implementation of phonebook</p>
-            </article>
-        </div>
-    </section>
-    <!-- Five -->
-    <section id="two">
-        <h2>Get In Touch</h2>
-        <p>There are my personal information</p>
-        <div class="row">
-            <div class="col-4 col-12-small">
-                <ul class="labeled-icons">
-                    <li>
-                        <h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-                        Kartal, Istanbul<br/>
-                        Republic of Türkiye<br/>
-                    </li>
-                    <li>
-                        <h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-                        +380972144192
-                    </li>
-                    <li>
-                        <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-                        <a href="mailto:shepel9119@gmail.com">shepel9119@gmail.com</a>
-                    </li>
+                <ul class="copyright">
+                    <li>&copy; 2023</li>
+                    <li>Design:<a href="http://html5up.net">HTML5 UP</a> Develop:<a href="https://github.com/y00tss">Shepelenko</a></li>
                 </ul>
             </div>
-        </div>
-    </section>
-</div>
+        </footer>
 
-<!-- Footer -->
-<footer id="footer">
-    <div class="inner">
-        <ul class="icons">
-            <li><a href="mailto:shepel9119@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-            <li><a href="https://github.com/y00tss" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-            <li><a href="https://t.me/MShepel" target="_blank" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
-            <li><a href="https://www.linkedin.com/in/mykhailo-shepelenko-021592248/" target="_blank" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-        </ul>
-        <ul class="copyright">
-            <li>&copy; 2023</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-    </div>
-</footer>
-
-<!-- Scripts -->
-<script src="{% static 'CV/assets/js/jquery.min.js' %}"></script>
-<script src="{% static 'CV/assets/js/browser.min.js' %}"></script>
-<script src="{% static 'CV/assets/js/breakpoints.min.js' %}"></script>
-<script src="{% static 'CV/assets/js/util.js' %}"></script>
-<script src="{% static 'CV/assets/js/main.js' %}"></script>
-<script src="{% static 'CV/assets/js/learnmore.js' %}"></script>
-<script src="{% static 'CV/assets/js/jquery.poptrox.min.js' %}"></script>
-
-
+        <!-- Scripts -->
+        <script src="{% static 'CV/assets/js/jquery.min.js' %}"></script>
+        <script src="{% static 'CV/assets/js/browser.min.js' %}"></script>
+        <script src="{% static 'CV/assets/js/breakpoints.min.js' %}"></script>
+        <script src="{% static 'CV/assets/js/util.js' %}"></script>
+        <script src="{% static 'CV/assets/js/main.js' %}"></script>
+        <script src="{% static 'CV/assets/js/learnmore.js' %}"></script>
+        <script src="{% static 'CV/assets/js/jquery.poptrox.min.js' %}"></script>
+        <script src="{% static 'CV/assets/js/phonenumber.js' %}"></script>
 
 </body>
 </html>
