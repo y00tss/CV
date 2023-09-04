@@ -13,5 +13,19 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="c11b077c-6798-42ad-b581-c8075c5264a0" uuid="07c778c5-c007-4191-a38a-433ed149f0ba">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$USER_HOME$/Downloads/c11b077c-6798-42ad-b581-c8075c5264a0</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="CV" uuid="06a98c35-4f79-4dda-9d2b-8e7d03f73a84">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-44-215-40-87.compute-1.amazonaws.com:5432/d1eb8q320340bn</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
